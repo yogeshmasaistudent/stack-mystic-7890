@@ -2,7 +2,7 @@ import React from 'react'
 
 function Comapany() {
   return (
-    <div>Comapany</div>
+    <div>Here we will be writeing Comapany page section </div>
   )
 }
 
