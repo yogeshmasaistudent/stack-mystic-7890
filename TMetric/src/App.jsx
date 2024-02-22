@@ -1,15 +1,13 @@
-import { useState } from 'react'
 
 import './App.css'
-import Firstsection from './pages/component/Firstsection'
-import Secondsection from './pages/component/Secondsection'
-import Thirdsection from './pages/component/Thirdsection'
+import Homepage from './pages/Homepage/Homepage'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
    <div>
+    <Homepage/>
+
+
     
    </div>
   )
