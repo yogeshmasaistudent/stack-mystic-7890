@@ -1,9 +1,20 @@
 import { Box, Button, Text } from '@chakra-ui/react'
-// import React from 'react'
-// import * as data from "./data"
-import data from "../Homepage/data"
-
 export const PopularServices = () => {
+    const data = [
+        "https://tmetric.com/media/cshbmvwf/logo-integration-gsuite.svg",
+        "https://tmetric.com/media/fnbggshs/logo-integration-msoffice.svg",
+        "https://tmetric.com/media/plvb1mg0/logo-integration-gkeep.svg",
+        "https://tmetric.com/media/smflyk5w/logo-integration-github.svg",
+        "https://tmetric.com/media/kbrcntmi/logo-integration-excel.svg",
+        "https://tmetric.com/media/4aeci1fh/logo-integration-asana.svg",
+        "https://tmetric.com/media/caxbzjss/logo-integration-jira.svg",
+        "https://tmetric.com/media/dw2nwjwv/logo-integration-gitlab.svg",
+        "https://tmetric.com/media/me5ih5eu/logo-integration-gdocs.svg",
+        "https://tmetric.com/media/0bzmfrlf/logo-integration-trello.svg",
+        "https://tmetric.com/media/sdaj41fi/logo-integration-redmine.svg",
+        "https://tmetric.com/media/1xedbfav/logo-integration-zendesk.svg",
+        "https://tmetric.com/media/n3dmgi1p/logo-integration-wrike.svg",
+    ]
   return (
     <Box 
     borderBottom={"0.5px solid lightgray"}
@@ -83,7 +94,7 @@ export const PopularServices = () => {
             margin={'auto'}
             gap={"20px"}
             >
-            {data.popularServicesImages.map((item) => {
+            {data.map((item) => {
                 return <Box 
                         key={item}
                         display={"flex"}
