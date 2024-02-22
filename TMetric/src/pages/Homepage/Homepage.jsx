@@ -8,6 +8,7 @@ import { TrustedByCompany } from "./TrustByCompany"
 import { WhyTmetric } from "./WhyTemtric"
 import { Box } from "@chakra-ui/react"
 import { Navbar } from "../../Components/Navbar"
+import WhyTrackTime from "./WhyTrackTime"
 function Homepage() {
   return (
     <div>
@@ -16,6 +17,7 @@ function Homepage() {
         <Firstsection/>           
        <ManageTeamData/>
        <PopularServices/>
+       <WhyTrackTime/>
        <Reviews/>
        <TrustedByCompany/>
        <WhyTmetric/>

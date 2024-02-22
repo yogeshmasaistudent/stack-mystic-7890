@@ -285,13 +285,6 @@
         rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-.HomePageContainer3_ListDiv> :nth-child(1) {
-    /* border: solid;
-    margin: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
-}
 
 .HomePageContainer3_ListDiv> :nth-child(1)>img {
     width: 48px;
@@ -345,13 +338,13 @@
   }
 
   /* Add more specific styles for smaller screens */
-}
+
 
 /* Base styles */
 .HomePageMainDiv {
     max-width: 100%;
     /* Add other base styles here */
-} */
+} 
 
 /* Styles for screens smaller than 576px */
 @media (max-width: 575.98px) {
@@ -427,3 +420,4 @@
 
     /* Add more styles as needed */
 }
+/* css part container8 */
