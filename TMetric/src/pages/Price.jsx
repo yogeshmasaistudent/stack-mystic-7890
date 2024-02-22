@@ -68,7 +68,7 @@ const Price = () => {
 
   return (
     <>
-      <Navbar />
+     
       <div>
         <div className="price-header">
           <h1> Pricing</h1>

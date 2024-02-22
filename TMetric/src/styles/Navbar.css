@@ -1,16 +1,10 @@
 .NavbarMainDiv {
-    height: 64px;
-    /* border: solid; */
-    background-color:white;
-    /* padding: 0px 40px; */
-    display: flex;
-  
-    /* gap: 32px; */
-    width: 100%;
     top: 0px;
     position: fixed;
-    z-index: 100;
+    z-index: 1000;
+    
   }
+  
   .NavbarPageName {
     display: flex;
     align-items: center;
@@ -23,6 +17,7 @@
   .NavbarPageName > a {
     padding: 0px 0px;
   } */
+  
   .NavbarPageName:hover {
     transition-duration: 0.3s;
     color: #3070f0;

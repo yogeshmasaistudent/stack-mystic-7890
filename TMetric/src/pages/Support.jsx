@@ -6,7 +6,7 @@ import { Navbar } from "../Components/Navbar";
 const Support = () => {
   return (
     <>
-      <Navbar />
+    
       <div className={style.supportmain}>
         <div className={style.supportnav}>
           <div className={style.supportheading}>
