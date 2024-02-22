@@ -1,6 +1,4 @@
 import { Box } from '@chakra-ui/react'
-import React from 'react'
-
 export const TrustedByCompany = () => {
 
     const image =[
@@ -51,12 +49,12 @@ export const TrustedByCompany = () => {
         >
             { image.map((e,i) => 
                 <Box 
-                key={e}
+                key={i}
                     display={'flex'} 
                     justifyContent={'center'} 
                     alignItems={'center'} 
                 > 
-                    <img  src={`${e}`} alt="" srcset="" />  
+                    <img  src={`${e}`} alt=""/>  
                 </Box>
         )}
         </Box>
