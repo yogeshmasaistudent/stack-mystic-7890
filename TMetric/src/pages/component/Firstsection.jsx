@@ -62,15 +62,15 @@ function Firstsection() {
           <h2>What makes TMetric your best business companion</h2>
         </div>
         <div className="HomePageContainer3_Child2">
-          <div>
+          <div className='containerthreeImageDiv'>
             {timeTracking && (
-              <img
+              <img className='firstContainerImage'
                 src="https://tmetric.com/media/e5enfaae/img-advantages.png"
                 alt=""
               />
             )}
             {projectManagement && (
-              <img
+              <img 
                 src="https://tmetric.com/media/d2dhexfq/img-advantages-project-management.png"
                 alt=""
               />

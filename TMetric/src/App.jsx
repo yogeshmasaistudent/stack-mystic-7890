@@ -7,8 +7,10 @@ import Homepage from './pages/Homepage/Homepage'
 function App() {
   return (
    <div>
-   <Homepage/>
     <AllRoutes/>
+
+   <Homepage/>
+   
    </div>
   )
 }
