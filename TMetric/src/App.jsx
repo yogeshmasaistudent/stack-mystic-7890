@@ -13,12 +13,8 @@ function App() {
   return (
    <div>
     <AllRoutes/>
-
-
     <Homepage/>
 
-
-   
    </div>
   )
 }
