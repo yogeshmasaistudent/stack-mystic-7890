@@ -10,9 +10,9 @@
 } */
 .signupmain {
     width: 86%;
-    height: 780px;
+    /* height: 780px; */
     border: 1px solid rgba(128, 128, 128, 0.425);
-    border-radius: 7px;
+    border-radius: 8px;
     margin: auto;
     margin-top: 1%;
     display: flex;
@@ -21,20 +21,18 @@
 }
 
 .signupmaindiv1 {
-
     width: 50%;
     height: 100%;
     background-color: white;
 }
 
 .signupmaindiv2 {
-
     width: 60%;
     height: 100%;
+    /* background-color: rgb(242,245,252); */
 }
 
 .signupmaindiv2>img {
-
     width: 100%;
     height: 100%;
 }
@@ -66,7 +64,7 @@
 .signupmaininputs {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 100%;
     height: fit-content;
 
 }
@@ -79,8 +77,8 @@
 }
 
 .signup label {
-    width: 37.84px;
-    height: 22.19px;
+    /* width: 37.84px; */
+    /* height: 22.19px; */
     color: rgb(97, 96, 96);
     padding: 0px 0px 4px;
 
@@ -89,15 +87,16 @@
 }
 
 .signup input {
-    width: 360px;
+    width: 100%;
     height: 32.19px;
     margin-left: 2px;
     background-color: #FFFFFF;
     padding: 6px 12px;
     border: 1px solid rgba(128, 128, 128, 0.562);
     border-radius: 5px;
-    margin-top: 4px;
+    margin-top: 4px ;
     outline: none;
+    
 }
 
 .signup input:focus {
@@ -106,13 +105,13 @@
 
 
 .signupmaininputsbtn {
-    width: 360px;
+    width: 100%;
     height: 32.19px;
     color: white;
     background-color: #3070f0;
     border: none;
     border-radius: 5px;
-    margin-top: 40px;
+    /* margin-top: 20px; */
     text-align: center;
     margin-left: 25px;
 
@@ -125,7 +124,8 @@
 
 .signupmaininputshr {
     display: flex;
-    margin-top: 33px;
+    margin-top: 25px;
+    margin-bottom: 15px;
     width: fit-content;
     height: fit-content;
     justify-content: space-between;
@@ -139,9 +139,11 @@
 
 .signup span {
     color: #777E85;
-    width: 45.42;
-    height: 22.19;
+    font-size: 14px;
     padding: 0px 16px 9px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
 .signupadsection {
@@ -155,7 +157,7 @@
 }
 
 .signupadsection1 {
-    width: 90%;
+    max-width: 90%;
     height: 38.19px;
     display: flex;
     justify-content: center;
@@ -167,6 +169,7 @@
 
 .signupadsection1>p {
     color: grey;
+    
 }
 
 .signupadsechr {
@@ -182,7 +185,6 @@
     margin: auto;
     gap: 6px;
 }
-
 
 .passRow1 {
     display: flex;
@@ -204,3 +206,49 @@
 .check {
     color: green;
 }
+
+@media screen and (max-width: 768px) {
+    .signupmaindiv2 {
+      display: none;
+    }
+  
+    .signupmain {
+      max-width: 100%;
+    }
+  
+    .signupmaindiv1 {
+      width: 100%;
+    }
+    .signupmain{
+        width: 100%;
+        justify-content: center;
+        border: none;
+    }
+    .signupadsection1>p {
+        color: grey;
+        font-size: 8px;
+    }
+    /* .signupmaindiv1{
+        display: flex;
+        justify-content: center;
+    } */
+  }
+  @media screen and (max-width: 1200px) {
+    .signupmaindiv2 {
+      display: none;
+    }
+    .signupmain{
+        width: 100%;
+        justify-content: center;
+        border: none;
+    }
+    .signupadsection1>p {
+        color: grey;
+        font-size: 12px;
+    }
+    /* .signupmaindiv1{
+        display: flex;
+        justify-content: center;
+    } */
+  }
+    
