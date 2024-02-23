@@ -14,6 +14,7 @@ import { DropdownWhyTMatric } from "../Components/DropdownWhyTMatric";
 import { DropdownApp } from "../Components/DropdownAppIntegeration";
 
 const AllRoutes = () => {
+  
   return (
   <BrowserRouter>
   <Navbar/>

@@ -7,7 +7,7 @@ import Reviews from "./Reviews"
 import { TrustedByCompany } from "./TrustByCompany"
 import { WhyTmetric } from "./WhyTemtric"
 import { Box } from "@chakra-ui/react"
-import { Navbar } from "../../Components/Navbar"
+
 function Homepage() {
   return (
     <div>
