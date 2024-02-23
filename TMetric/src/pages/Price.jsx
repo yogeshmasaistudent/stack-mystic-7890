@@ -2,7 +2,11 @@ import { useState } from "react";
 import "../styles/Price.css";
 import { TiTick } from "react-icons/ti";
 import { ImCross } from "react-icons/im";
+<<<<<<< HEAD
+import { Box, Stack, Switch } from "@chakra-ui/react";
+=======
 
+>>>>>>> d7861afb7ddbe8063d95e4a35c4c8fe65afd2fb8
 import { Footer } from "../Components/Footer";
 import { v4 as uuid } from "uuid";
 import { Link } from "react-router-dom";
@@ -15,6 +19,9 @@ const data = [
   },{
     title:"Reporting",
    },
+  {
+    title: "Reporting",
+  },
   {
     title: "Timer button in 50+ web apps",
   },
@@ -64,7 +71,6 @@ const Price = () => {
 
   return (
     <>
-     
       <div>
         <div className="price-header">
           <h1> Pricing</h1>
@@ -73,6 +79,15 @@ const Price = () => {
         <div>
           <div className="toggler">
             <div className="input-div">
+              <Box display="flex" gap="10px">
+                <Box>Annually</Box>
+                <Stack direction="row">
+                  <Switch colorScheme="green" size="md" />
+                </Stack>
+                <Box display="flex">Monthly</Box>
+              </Box>
+  
+ 
               <span
                 style={{
                   fontWeight: "500",
@@ -132,6 +147,16 @@ const Price = () => {
                 </Link>
               </div>
 
+<<<<<<< HEAD
+              {data.map((cat, i) => {
+                if (i > 9) {
+                  return (
+                    <div className="feature-item" key={uuid()}>
+                      <TiTick className="TickIcon" />
+                      {cat.title}
+                    </div>
+                  );
+=======
               {data.map((cat,i) => {
                 if(i>9){
                 return (
@@ -140,6 +165,7 @@ const Price = () => {
                     {cat.title}
                   </div>
                 );
+>>>>>>> d7861afb7ddbe8063d95e4a35c4c8fe65afd2fb8
                 }
               })}
             </div>
@@ -161,14 +187,22 @@ const Price = () => {
                 </Link>
               </div>
               {data.map((cat, i) => {
+<<<<<<< HEAD
+                if (i > 5 && i < 10) {
+=======
                 if ( i>5 && i < 10) {
+>>>>>>> d7861afb7ddbe8063d95e4a35c4c8fe65afd2fb8
                   return (
                     <div className="feature-item" key={uuid()}>
                       <TiTick className="TickIcon" />
                       {cat.title}
                     </div>
                   );
+<<<<<<< HEAD
+                }
+=======
                 } 
+>>>>>>> d7861afb7ddbe8063d95e4a35c4c8fe65afd2fb8
               })}
             </div>
 
@@ -220,154 +254,7 @@ const Price = () => {
         <h1
           style={{ textAlign: "center", marginTop: "30px", fontSize: "35px" }}
         >
-          How to Buy ?
-        </h1>
-
-        <div style={{ width: "50%", margin: "auto" }}>
-          <div>
-            <div style={{ marginTop: "30px" }}>
-              <Link to="#" style={{ color: "#3070f0" }}>
-                <span>
-                  <button
-                    style={{
-                      background: "#e7edfc",
-                      color: "#2e4497",
-                      fontSize: "25px",
-                      width: "50px",
-                      height: "50px",
-                      marginRight: "40px",
-                      fontWeight: "600",
-                      borderRadius: "12px",
-                      border: "none",
-                    }}
-                  >
-                    1
-                  </button>
-                </span>
-                Log in
-              </Link>
-              <span> </span>to your TMetric account. If you  have one,
-              <span> </span>
-              <Link to="#" style={{ color: "#3070f0" }}>
-                sign up
-              </Link>
-              <span> </span>now.
-            </div>
-          </div>
-
-          <div style={{ marginTop: "30px" }}>
-            <button
-              style={{
-                background: "#e7edfc",
-                color: "#2e4497",
-                fontSize: "25px",
-                width: "50px",
-                height: "50px",
-                marginRight: "40px",
-                fontWeight: "600",
-                borderRadius: "12px",
-                border: "none",
-              }}
-            >
-              2
-            </button>
-            <Link to="#">On the main menu, click</Link>
-            <span style={{ fontWeight: "700" }}> Workspace</span> and select{" "}
-            <span style={{ fontWeight: "750" }}>Subscription. </span>
-          </div>
-
-          <div style={{ marginTop: "30px" }}>
-            <button
-              style={{
-                background: "#e7edfc",
-                color: "#2e4497",
-                fontSize: "25px",
-                width: "50px",
-                height: "50px",
-                marginRight: "40px",
-                fontWeight: "600",
-                borderRadius: "12px",
-                border: "none",
-              }}
-            >
-              3
-            </button>
-            <Link to="#">On the subscription page click </Link>
-            <span style={{ fontWeight: "700" }}>Upgrade Now.</span>
-          </div>
-
-          <div style={{ marginTop: "30px" }}>
-            <button
-              style={{
-                background: "#e7edfc",
-                color: "#2e4497",
-                fontSize: "25px",
-                width: "50px",
-                height: "50px",
-                marginRight: "40px",
-                fontWeight: "600",
-                borderRadius: "12px",
-                border: "none",
-              }}
-            >
-              4
-            </button>
-            <Link to="#">
-              Enter your team size, select subscription plan, and click{" "}
-            </Link>
-            <span style={{ fontWeight: "700" }}> Proceed To Checkout.</span>
-          </div>
-          <div style={{ marginTop: "30px" }}>
-            <button
-              style={{
-                background: "#e7edfc",
-                color: "#2e4497",
-                fontSize: "25px",
-                width: "50px",
-                height: "50px",
-                marginRight: "40px",
-                fontWeight: "600",
-                borderRadius: "12px",
-                border: "none",
-              }}
-            >
-              5
-            </button>
-            <Link to="#">
-              On the shopping cart page enter your Billing Information and
-              select Payment Options.
-            </Link>
-          </div>
-
-          <div style={{ marginTop: "30px" }}>
-            <button
-              style={{
-                background: "#e7edfc",
-                color: "#2e4497",
-                fontSize: "25px",
-                width: "50px",
-                height: "50px",
-                marginRight: "40px",
-                fontWeight: "600",
-                borderRadius: "12px",
-                border: "none",
-              }}
-            >
-              6
-            </button>
-            <Link to="#"> Click </Link>
-            <span style={{ fontWeight: "700" }}>Continue </span>to place an
-            order.
-          </div>
-        </div>
-        <hr style={{ marginTop: "30px" }}></hr>
-      </div>
-
-      <div className="Q-part">
-        <h1
-          style={{ textAlign: "center", marginTop: "30px", fontSize: "35px" }}
-        >
-          Other Question
+          Frequently Asked Questions
         </h1>
 
         <div style={{ width: "60%", marginLeft: "25%" }}>

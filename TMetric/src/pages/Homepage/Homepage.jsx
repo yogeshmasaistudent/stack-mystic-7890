@@ -5,10 +5,14 @@ import MakeTime from "./MakeTime"
 import { PopularServices } from "./PopularService"
 import Reviews from "./Reviews"
 import { TrustedByCompany } from "./TrustByCompany"
-import { WhyTmetric } from "./WhyTemtric"
+// import { WhyTmetric } from "./WhyTemtric"
 import { Box } from "@chakra-ui/react"
+
 import Secondsection from "../component/Secondsection"
 import Thirdsection from "../component/Thirdsection"
+
+// import { Navbar } from "../../Components/Navbar"
+
 
 function Homepage() {
   return (
@@ -22,7 +26,7 @@ function Homepage() {
        <PopularServices/>
        <Reviews/>
        <TrustedByCompany/>
-       <WhyTmetric/>
+       {/* <WhyTmetric/> */}
        <MakeTime/>
       </Box>
    
