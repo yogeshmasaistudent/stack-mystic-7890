@@ -1,4 +1,3 @@
-import React from 'react'
 import "./secondsection.css"
 
 function Thirdsection() {
@@ -10,7 +9,7 @@ function Thirdsection() {
           </div>
           <div>
             <h2>Ensure the profitability of your business</h2>
-            <ul typeof="disc">
+            <ul>
               <li>project management</li>
               <li>project budgeting</li>
               <li>billing and invoicing</li>

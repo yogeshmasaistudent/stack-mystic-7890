@@ -1,7 +1,7 @@
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import { HomePage } from "../pages/HomePage";
+import  {HomePage}  from "../pages/HomePage";
 import Support from "../pages/Support";
 
 
@@ -15,20 +15,21 @@ import { DropdownApp } from "../Components/DropdownAppIntegeration";
 
 const AllRoutes = () => {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
+  <BrowserRouter>
+  <Navbar/>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+     
+      <Route path="/why-tmetric" element={<DropdownWhyTMatric />} />
+<Route path="/apps-integrations" element={<DropdownApp />} />
 
-        <Route path="/why-tmetric" element={<DropdownWhyTMatric />} />
-        <Route path="/apps-integrations" element={<DropdownApp />} />
-
-        <Route path="/support" element={<Support />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/price" element={<Price />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
+      
+      <Route path="/support" element={<Support />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/price" element={<Price />} />
+      <Route path="/signup" element={<SignUp />} />
+      <Route path="/login" element={<Login />} />
+    </Routes>
     </BrowserRouter>
   );
 };

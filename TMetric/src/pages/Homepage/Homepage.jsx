@@ -1,27 +1,27 @@
 
-// import Navbar from './Navbar'
-
 import Firstsection from "../component/Firstsection"
 import { ManageTeamData } from "./ManageTeamData"
-// import MakeTime from "./MakeTime"
+import MakeTime from "./MakeTime"
 import { PopularServices } from "./PopularService"
-import { SingleTab } from "./SingalTab"
+import Reviews from "./Reviews"
 import { TrustedByCompany } from "./TrustByCompany"
 import { WhyTmetric } from "./WhyTemtric"
-
-
+import { Box } from "@chakra-ui/react"
+import { Navbar } from "../../Components/Navbar"
 function Homepage() {
   return (
     <div>
-       <Firstsection/>
+      <Box>
+      
+        <Firstsection/>           
        <ManageTeamData/>
        <PopularServices/>
-       {/* <SingleTab/> */}
+       <Reviews/>
        <TrustedByCompany/>
        <WhyTmetric/>
-       {/* <MakeTime/> */}
-      
-
+       <MakeTime/>
+      </Box>
+   
     </div>
   )
 }

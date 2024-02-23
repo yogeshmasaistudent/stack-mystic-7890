@@ -119,6 +119,28 @@
     color: #292e33;
 }
 
+.HomePageContainer3_Child2 {
+    display: flex;
+    border: 5px solid red;
+}
+
+.containerthreeImageDiv{
+    width: 100%;
+    border: 2px solid red;
+    
+}
+.HomePageContainer3_Lists{
+    border: 2px solid rgb(0, 0, 0);
+    width: 100%;
+}
+
+@media (max-width:995px){
+    .HomePageContainer3_Child2 {
+        display: flex;
+        flex-direction: column;
+        border: 5px solid red;
+    }
+} 
 
 
 

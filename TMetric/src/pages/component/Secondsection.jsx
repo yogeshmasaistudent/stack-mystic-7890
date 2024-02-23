@@ -1,11 +1,10 @@
-import React from 'react';
 import "./secondsection.css"
 function Secondsection(){
   return(
     <div className="HomePageContainer4">
     <div>
       <h2>Manage your team effectively</h2>
-      <ul typeof="disc">
+      <ul>
         <li>timekeeping</li>
         <li>sites and apps monitoring</li>
         <li>activity tracking</li>
