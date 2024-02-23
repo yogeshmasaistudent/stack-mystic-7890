@@ -3,7 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 import AllRoutes from './routes/Allroutes'
-import  Homepage  from './pages/HomePage/Homepage';
+import Homepage from './pages/Homepage/Homepage';
+
 
 
 
