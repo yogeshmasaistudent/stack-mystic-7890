@@ -5,7 +5,6 @@ import style from "../styles/login.module.css";
 
 const LogIn = () => {
 
-
   const [user, setuser] = useState({});
 
   const [showErr, setShowErr] = useState(false);
@@ -44,7 +43,7 @@ const LogIn = () => {
             <form onSubmit={handleSubmit}>
               <div className={style.signupmaininputs1}>
                 <label>Email</label>
-                <input
+                <input className="email"
                   type="email"
                   placeholder="JohnSmith@gmail.com"
                   name="email"
@@ -81,11 +80,11 @@ const LogIn = () => {
             {/* hr */}
 
             <div className={style.signupmaininputshr}>
-              <hr />
+             
 
               <span>or</span>
 
-              <hr />
+            
             </div>
           </div>
 
@@ -107,7 +106,7 @@ const LogIn = () => {
               <p>Log In with Google</p>
             </div>
 
-            <hr className={style.signupadsechr} />
+            <br />
 
             <div className={style.signupadsechrunder}>
               <p style={{ color: "blue" }}>Can't Log In?</p>

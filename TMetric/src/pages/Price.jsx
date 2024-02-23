@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../styles/Price.css";
 import { TiTick } from "react-icons/ti";
 import { ImCross } from "react-icons/im";
-import { Navbar } from "../Components/Navbar";
+
 import { Footer } from "../Components/Footer";
 import { v4 as uuid } from "uuid";
 import { Link } from "react-router-dom";
@@ -12,7 +12,9 @@ const data = [
   },
   {
     title: "Unlimited projects and clients",
-  },
+  },{
+    title:"Reporting",
+   },
   {
     title: "Timer button in 50+ web apps",
   },
@@ -41,13 +43,7 @@ const data = [
     title: "Screenshots capturing",
   },
   {
-    title: "Paid time off tracking",
-  },
-  {
     title: "Payroll for employees",
-  },
-  {
-    title: "Time tracking permissions",
   },
   {
     title: "Time-sync with Jira and QuickBooks",
@@ -59,7 +55,7 @@ const data = [
     title: "Work Schedule",
   },
   {
-    title: "Work Schedule",
+    title: "Team Dashboard",
   },
 ];
 
@@ -136,13 +132,15 @@ const Price = () => {
                 </Link>
               </div>
 
-              {data.map((cat) => {
+              {data.map((cat,i) => {
+                if(i>9){
                 return (
                   <div className="feature-item" key={uuid()}>
                     <TiTick className="TickIcon" />
                     {cat.title}
                   </div>
                 );
+                }
               })}
             </div>
             <div className="B-part">
@@ -163,21 +161,14 @@ const Price = () => {
                 </Link>
               </div>
               {data.map((cat, i) => {
-                if (i < 9) {
+                if ( i>5 && i < 10) {
                   return (
                     <div className="feature-item" key={uuid()}>
                       <TiTick className="TickIcon" />
                       {cat.title}
                     </div>
                   );
-                } else {
-                  return (
-                    <div className="feature-2" key={uuid()}>
-                      <ImCross className="cros" />
-                      {cat.title}
-                    </div>
-                  );
-                }
+                } 
               })}
             </div>
 
@@ -199,17 +190,10 @@ const Price = () => {
                 </Link>
               </div>
               {data.map((cat, i) => {
-                if (i < 3) {
+                if (i <= 3) {
                   return (
                     <div className="feature-item" key={uuid()}>
                       <TiTick className="TickIcon" />
-                      {cat.title}
-                    </div>
-                  );
-                } else {
-                  return (
-                    <div className="feature-2" key={uuid()}>
-                      <ImCross className="cros" />
                       {cat.title}
                     </div>
                   );
