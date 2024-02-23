@@ -250,7 +250,7 @@ const SignUp = () => {
                 <p>Sign Up with Google</p>
               </div>
 
-              <hr className={style.signupadsechr} />
+              {/* <hr className={style.signupadsechr} /> */}
 
               <div className={style.signupadsechrunder}>
                 <p>Alraedy Have a account?</p>

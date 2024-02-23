@@ -58,8 +58,8 @@ function Firstsection() {
 
     return (
         <div className="HomePageContainer3">
-        <div>
-          <h2>What makes TMetric your best business companion</h2>
+        <div className='HomePageContainer3_Child1'>
+          <h2 >What makes TMetric your best business companion</h2>
         </div>
         <div className="HomePageContainer3_Child2">
           <div className='containerthreeImageDiv'>

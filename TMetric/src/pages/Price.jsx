@@ -2,7 +2,11 @@ import { useState } from "react";
 import "../styles/Price.css";
 import { TiTick } from "react-icons/ti";
 import { ImCross } from "react-icons/im";
+<<<<<<< HEAD
 import { Box, Stack, Switch } from "@chakra-ui/react";
+=======
+
+>>>>>>> d7861afb7ddbe8063d95e4a35c4c8fe65afd2fb8
 import { Footer } from "../Components/Footer";
 import { v4 as uuid } from "uuid";
 import { Link } from "react-router-dom";
@@ -12,7 +16,9 @@ const data = [
   },
   {
     title: "Unlimited projects and clients",
-  },
+  },{
+    title:"Reporting",
+   },
   {
     title: "Reporting",
   },
@@ -141,6 +147,7 @@ const Price = () => {
                 </Link>
               </div>
 
+<<<<<<< HEAD
               {data.map((cat, i) => {
                 if (i > 9) {
                   return (
@@ -149,6 +156,16 @@ const Price = () => {
                       {cat.title}
                     </div>
                   );
+=======
+              {data.map((cat,i) => {
+                if(i>9){
+                return (
+                  <div className="feature-item" key={uuid()}>
+                    <TiTick className="TickIcon" />
+                    {cat.title}
+                  </div>
+                );
+>>>>>>> d7861afb7ddbe8063d95e4a35c4c8fe65afd2fb8
                 }
               })}
             </div>
@@ -170,14 +187,22 @@ const Price = () => {
                 </Link>
               </div>
               {data.map((cat, i) => {
+<<<<<<< HEAD
                 if (i > 5 && i < 10) {
+=======
+                if ( i>5 && i < 10) {
+>>>>>>> d7861afb7ddbe8063d95e4a35c4c8fe65afd2fb8
                   return (
                     <div className="feature-item" key={uuid()}>
                       <TiTick className="TickIcon" />
                       {cat.title}
                     </div>
                   );
+<<<<<<< HEAD
                 }
+=======
+                } 
+>>>>>>> d7861afb7ddbe8063d95e4a35c4c8fe65afd2fb8
               })}
             </div>
 
