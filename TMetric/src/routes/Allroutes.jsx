@@ -21,12 +21,12 @@ const AllRoutes = () => {
       <Route path="/" element={<HomePage />} />
      
       <Route path="/why-tmetric" element={<DropdownWhyTMatric />} />
-<Route path="/apps-integrations" element={<DropdownApp />} />
-
-      
+      <Route path="/apps-integrations" element={<DropdownApp />} />
       <Route path="/support" element={<Support />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/price" element={<Price />} />
+      {/* <Route path="/price" element={<Container/>}/> */}
+      {/* Here i am making another componant */}
       <Route path="/signup" element={<SignUp />} />
       <Route path="/login" element={<Login />} />
     </Routes>

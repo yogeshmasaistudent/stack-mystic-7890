@@ -494,7 +494,7 @@ const Support = () => {
                 <ul>
                   <li>• I am a workspace owner, why I don't see my tasks.</li>
                   <li>
-                    • How can I see my employee's private tasks that don't
+                    How can I see my employee's private tasks that don't
                     belong to any project?
                   </li>
                 </ul>

@@ -136,7 +136,7 @@ export const Footer = () => {
       </div>
       <div className="FooterContainer2">
         <div>
-          <span>Copyright © Devart 2022</span>
+          <span>Copyright © Stack-mystice Team 2024</span>
           <ImFacebook2 className="FooterIcon FooterIconMargin" />
           <FaTwitter className="FooterIcon FooterIconMargin" />
           <ImLinkedin className="FooterIcon FooterIconMargin" />
