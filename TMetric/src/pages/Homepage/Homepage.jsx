@@ -7,16 +7,14 @@ import Reviews from "./Reviews"
 import { TrustedByCompany } from "./TrustByCompany"
 // import { WhyTmetric } from "./WhyTemtric"
 import { Box } from "@chakra-ui/react"
-<<<<<<< HEAD
+import { HomePage } from "../HomePage"
 // import { Navbar } from "../../Components/Navbar"
-=======
-
->>>>>>> d7861afb7ddbe8063d95e4a35c4c8fe65afd2fb8
+// import { Navbar } from "../../Components/Navbar"
 function Homepage() {
   return (
     <div>
-      <Box>
-      
+        <Box>
+        <HomePage/>
         <Firstsection/>           
        <ManageTeamData/>
        <PopularServices/>
@@ -25,7 +23,6 @@ function Homepage() {
        {/* <WhyTmetric/> */}
        <MakeTime/>
       </Box>
-   
     </div>
   )
 }

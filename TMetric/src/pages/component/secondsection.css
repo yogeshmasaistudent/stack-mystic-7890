@@ -124,12 +124,12 @@
 
 .HomePageContainer3_Child2 {
     display: flex;
-    border: 5px solid red;
+    /* border: 5px solid red; */
 }
 
 .containerthreeImageDiv{
     width: 100%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     
 }
 .HomePageContainer3_Lists{

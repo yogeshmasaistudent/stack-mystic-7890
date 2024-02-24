@@ -1,10 +1,6 @@
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
-import  {HomePage}  from "../pages/HomePage";
 import Support from "../pages/Support";
-
-
 import Login from "../pages/Login";
 import SignUp from "../pages/Signup";
 import Blog from "../pages/Blog";
@@ -12,15 +8,15 @@ import Price from "../pages/Price";
 import { Navbar } from "../Components/Navbar";
 import { DropdownWhyTMatric } from "../Components/DropdownWhyTMatric";
 import { DropdownApp } from "../Components/DropdownAppIntegeration";
+import Homepage from "../pages/HomePage/Homepage";
 
-const AllRoutes = () => {
-  
+const AllRoutes = () =>{
   return (
   <BrowserRouter>
   <Navbar/>
     <Routes>
-      <Route path="/" element={<HomePage />} />
-     
+      <Route path="/" element={<Homepage/>}/>
+
       <Route path="/why-tmetric" element={<DropdownWhyTMatric />} />
       <Route path="/apps-integrations" element={<DropdownApp />} />
       <Route path="/support" element={<Support />} />
