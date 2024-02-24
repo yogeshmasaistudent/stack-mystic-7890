@@ -2,7 +2,7 @@ import "./secondsection.css"
 function Secondsection(){
   return(
     <div className="HomePageContainer4">
-    <div>
+    <div className="container4_firstDiv">
       <h2>Manage your team effectively</h2>
       <ul>
         <li>timekeeping</li>
@@ -21,7 +21,7 @@ function Secondsection(){
       </ul>
       <button>Start Free Trial</button>
     </div>
-    <div>
+    <div className="container4_SecondDiv" >
       <img src="https://tmetric.com/media/kssowlxe/img-activity-cases.svg" alt="" />
     </div>
     </div>
