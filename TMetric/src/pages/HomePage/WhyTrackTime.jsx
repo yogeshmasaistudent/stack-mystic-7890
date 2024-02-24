@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { BsArrowRightShort } from 'react-icons/bs';
-import "./HomePage.css"
+// import "./HomePage.css"
 const WhyTrackTime = () => {
     const [softwareDevelopers, setSoftwareDevelopers] = useState(true);
     const [marketers, setMarketers] = useState(false);
