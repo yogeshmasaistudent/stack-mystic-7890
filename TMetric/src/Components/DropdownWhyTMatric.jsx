@@ -3,9 +3,11 @@ import '../styles/WhyTMatric.css'
 // import { BsArrowRightShort } from 'react-icons/bs'
 export const DropdownWhyTMatric = () => {
     return (
+<div className='whyTMatric'>
+        
         <div className='WhyTMatricMainDiv'>
             <div>
-                <div>
+                <div >
                     <div className='WhyTMatricHeading'>Overview</div>
                     <div className='WhyTMatricSmallDiv'>
                         <div className='WhyTMatricTitle'>Industry</div>
@@ -17,7 +19,7 @@ export const DropdownWhyTMatric = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div >
                 <div className='WhyTMatricHeading'>Features</div>
                 <div className='WhyTMatricGrid'>
                     <div>
@@ -29,7 +31,7 @@ export const DropdownWhyTMatric = () => {
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div >
                         <div className='WhyTMatricSmallDiv'>
                             <img className='WhyTMatricIcon' src="https://tmetric.com/media/5r1l1s4g/icon-invoice-gray.svg" alt="" />
                             <div>
@@ -38,7 +40,7 @@ export const DropdownWhyTMatric = () => {
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div >
                         <div className='WhyTMatricSmallDiv'>
                             <img className='WhyTMatricIcon' src="https://tmetric.com/media/kqgpqtvh/icon-project-gray.svg" alt="" />
                             <div>
@@ -47,7 +49,7 @@ export const DropdownWhyTMatric = () => {
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div >
                         <div className='WhyTMatricSmallDiv'>
                             <img className='WhyTMatricIcon' src="https://tmetric.com/media/isxcp2ip/icon-team-gray.svg" alt="" />
                             <div>
@@ -56,7 +58,7 @@ export const DropdownWhyTMatric = () => {
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div >
                         <div className='WhyTMatricSmallDiv'>
                             <img className='WhyTMatricIcon' src="https://tmetric.com/media/g3jc0dsg/icon-reports-gray.svg" alt="" />
                             <div>
@@ -65,7 +67,7 @@ export const DropdownWhyTMatric = () => {
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div >
                         <div className='WhyTMatricSmallDiv'>
                             <img className='WhyTMatricIcon' src="https://tmetric.com/media/bxylkc2s/icon-time-off-gray.svg" alt="" />
                             <div>
@@ -77,6 +79,7 @@ export const DropdownWhyTMatric = () => {
                 </div>
                 <div className='WhyTMatricAllFeatures'><span>View all features </span></div>
             </div>
+        </div>
         </div>
     )
 }

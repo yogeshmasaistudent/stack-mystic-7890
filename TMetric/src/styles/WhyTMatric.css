@@ -1,3 +1,10 @@
+.whyTMatric{
+  /* display: flex;
+    border-top: solid 1px rgba(158, 158, 158, 0.402);
+    padding: 39px 60px 46px;
+    /* margin: 0px 2.47vw; */
+    justify-content: space-between; */
+}
 .WhyTMatricMainDiv {
     display: flex;
     border-top: solid 1px rgba(158, 158, 158, 0.402);
@@ -21,6 +28,7 @@
     width: 205px;
   }
   .WhyTMatricHeading {
+    width: 100%;
     font-size: 20px;
     margin-bottom: 16px;
     color: #a4a9b2;
@@ -30,17 +38,22 @@
     margin-bottom: 16px;
   }
   .WhyTMatricTitle {
+    width: 250%;
+
     color: #212529;
     font-size: 16px;
     margin-bottom: 8px;
     font-weight: bold;
   }
   .WhyTMatricText {
+    width: 200%;
+
     font-weight: 500;
     color: #4c5158;
     font-size: 16px;
   }
   .WhyTMatricGrid {
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -80,3 +93,144 @@
     transition-duration: 0.4s;
     color: #3070f0;
   }
+  @media (max-width: 768px) {
+    .WhyTMatricMainDiv {
+        padding: 10px;
+    }
+
+    .WhyTMatricSmallDiv {
+        width: 100%;
+    }
+
+    .WhyTMatricGrid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .WhyTMatricMainDiv {
+        padding: 20px;
+    }
+
+    .WhyTMatricSmallDiv {
+        width: 50%;
+    }
+
+    .WhyTMatricGrid {
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+    }
+}
+
+@media (min-width: 1025px) {
+    .WhyTMatricMainDiv {
+        padding: 30px;
+    }
+
+    .WhyTMatricSmallDiv {
+        width: 33.33%;
+    }
+
+    .WhyTMatricGrid {
+        grid-template-columns: repeat(3, minmax(150px, 1fr));
+    }
+}
+/* styles/WhyTMatric.css */
+
+@media (max-width: 768px) {
+  .WhyTMatricMainDiv {
+    padding: 20px;
+  }
+
+  .WhyTMatricHeading {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .WhyTMatricSmallDiv {
+    margin-bottom: 20px;
+  }
+
+  .WhyTMatricTitle {
+    font-size: 18px;
+  }
+
+  .WhyTMatricText {
+    font-size: 14px;
+  }
+
+  .WhyTMatricGrid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .WhyTMatricIcon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .WhyTMatricMainDiv {
+    padding: 30px;
+  }
+
+  .WhyTMatricHeading {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .WhyTMatricSmallDiv {
+    margin-bottom: 25px;
+  }
+
+  .WhyTMatricTitle {
+    font-size: 20px;
+  }
+
+  .WhyTMatricText {
+    font-size: 16px;
+  }
+
+  .WhyTMatricGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .WhyTMatricIcon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .WhyTMatricMainDiv {
+    padding: 40px;
+  }
+
+  .WhyTMatricHeading {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .WhyTMatricSmallDiv {
+    margin-bottom: 30px;
+  }
+
+  .WhyTMatricTitle {
+    font-size: 22px;
+  }
+
+  .WhyTMatricText {
+    font-size: 18px;
+  }
+
+  .WhyTMatricGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .WhyTMatricIcon {
+    width: 70px;
+    height: 70px;
+  }
+}

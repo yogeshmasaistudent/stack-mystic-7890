@@ -284,8 +284,6 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
         rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
-
-
 .HomePageContainer3_ListDiv> :nth-child(1)>img {
     width: 48px;
 }
@@ -300,7 +298,7 @@
     font-weight: 700;
     color: #292e33;
 }
-/* @media (max-width: 575.98px) {
+@media (max-width: 575.98px) {
     .HomePageContainer1 {
       
         padding: 10px;
@@ -310,7 +308,10 @@
       
         font-size: 14px;
     }
-
+ 
+    .HomePageContainer2{
+        justify-content: center;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -372,25 +373,13 @@
         /* Adjust text styles for medium screens */
         font-size: 16px;
     }
-
     /* Add more styles as needed */
+ 
+  .HomePageContainer2{
+    justify-content: center;
+
 }
-
-/* Styles for screens between 768px and 991.98px */
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .HomePageContainer1 {
-        /* Adjust padding or layout for large screens */
-        padding: 30px;
-    }
-
-    .HomePageContainer1_Text {
-        /* Adjust text styles for large screens */
-        font-size: 18px;
-    }
-
-    /* Add more styles as needed */
 }
-
 /* Styles for screens between 992px and 1199.98px */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .HomePageContainer1 {
@@ -421,3 +410,4 @@
     /* Add more styles as needed */
 }
 /* css part container8 */
+

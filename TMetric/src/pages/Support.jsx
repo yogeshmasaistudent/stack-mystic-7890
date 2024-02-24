@@ -2,7 +2,6 @@ import style from "../styles/Support.module.css";
 import { IoMdSearch } from "react-icons/io";
 import { BsFillArrowUpRightSquareFill } from "react-icons/bs";
 import { Footer } from "../Components/Footer";
-import { Navbar } from "../Components/Navbar";
 const Support = () => {
   return (
     <>
@@ -364,9 +363,9 @@ const Support = () => {
                     • Do I have to pay for myself even if I only monitor my
                     employees?
                   </li>
-                  <li>• Why 'Proceed to Checkout' button doesn't work?</li>
+                  <li>• Why Proceed to Checkout button doesnt work?</li>
                   <li>
-                    • I've bought a subscription, why my workspace wasn't
+                    • I haveve bought a subscription, why my workspace wasnt
                     upgraded?
                   </li>
                   <li>• How Can I Change my Payment Details?</li>
@@ -392,10 +391,10 @@ const Support = () => {
                     tracked?
                   </li>
                   <li>
-                    • What should I do with 'Timer is longer than 12 hours'
+                    • What should I do with Timer is longer than 12 hours
                     alert?
                   </li>
-                  <li>• What does 'Monthly Balance' mean?</li>
+                  <li>• What does Monthly Balance mean?</li>
                 </ul>
                 <hr />
               </div>
@@ -492,9 +491,9 @@ const Support = () => {
               <div className={style.fandqmain1divli}>
                 <h3>Tasks</h3>
                 <ul>
-                  <li>• I am a workspace owner, why I don't see my tasks.</li>
+                  <li>• I am a workspace owner, why I dont see my tasks.</li>
                   <li>
-                    • How can I see my employee's private tasks that don't
+                    How can I see my employees private tasks that dont
                     belong to any project?
                   </li>
                 </ul>
@@ -511,9 +510,9 @@ const Support = () => {
           </div>
           <div className={style.contactmainh1}>
             <h3>
-              If you didn't find what you were looking for, you can make a
+              If you didnt find what you were looking for, you can make a
               support request or email <br />
-              us to support@tmetric.com. We'll be glad to help you personally.
+              us to support@tmetric.com. We will be glad to help you personally.
             </h3>
           </div>
 
