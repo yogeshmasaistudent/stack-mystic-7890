@@ -7,22 +7,32 @@ import Reviews from "./Reviews"
 import { TrustedByCompany } from "./TrustByCompany"
 // import { WhyTmetric } from "./WhyTemtric"
 import { Box } from "@chakra-ui/react"
+
+import Secondsection from "../component/Secondsection"
+import Thirdsection from "../component/Thirdsection"
 import { HomePage } from "../HomePage"
+import { Footer } from "../../Components/Footer"
+
 // import { Navbar } from "../../Components/Navbar"
-// import { Navbar } from "../../Components/Navbar"
+
+
 function Homepage() {
   return (
     <div>
-        <Box>
-        <HomePage/>
+      <Box>
+      <HomePage/>
         <Firstsection/>           
-       <ManageTeamData/>
+       {/* <ManageTeamData/> */}
+       <Secondsection/>
+       <Thirdsection/>
        <PopularServices/>
        <Reviews/>
        <TrustedByCompany/>
        {/* <WhyTmetric/> */}
        <MakeTime/>
+       <Footer/>
       </Box>
+
     </div>
   )
 }

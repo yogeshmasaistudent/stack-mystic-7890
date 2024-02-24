@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "../styles/Price.css";
 import { TiTick } from "react-icons/ti";
-// import { ImCross } from "react-icons/im";
-import { Box, Stack, Switch } from "@chakra-ui/react";
+import { ImCross } from "react-icons/im";
 import { Footer } from "../Components/Footer";
 import { v4 as uuid } from "uuid";
 import { Link } from "react-router-dom";
+import { Box, Stack, Switch } from "@chakra-ui/react";
 const data = [
   {
     title: "Time tracking",
@@ -75,7 +75,6 @@ const Price = () => {
         <div>
           <div className="toggler">
             <div className="input-div">
-            
               <Box display="flex" gap="10px">
                 <Box>Annually</Box>
                 <Stack direction="row">
@@ -144,14 +143,14 @@ const Price = () => {
                 </Link>
               </div>
 
-              {data.map((cat, i) => {
-                if (i > 9) {
-                  return (
-                    <div className="feature-item" key={uuid()}>
-                      <TiTick className="TickIcon" />
-                      {cat.title}
-                    </div>
-                  );
+              {data.map((cat,i) => {
+                if(i>9){
+                return (
+                  <div className="feature-item" key={uuid()}>
+                    <TiTick className="TickIcon" />
+                    {cat.title}
+                  </div>
+                );
                 }
               })}
             </div>
@@ -173,14 +172,14 @@ const Price = () => {
                 </Link>
               </div>
               {data.map((cat, i) => {
-                if (i > 5 && i < 10) {
+                if ( i>5 && i < 10) {
                   return (
                     <div className="feature-item" key={uuid()}>
                       <TiTick className="TickIcon" />
                       {cat.title}
                     </div>
                   );
-                }
+                } 
               })}
             </div>
 
