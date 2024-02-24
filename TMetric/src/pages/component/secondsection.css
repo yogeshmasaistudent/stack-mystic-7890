@@ -195,6 +195,29 @@
     }
 }
 
+
+
+
+
+.container4_SecondDiv img {
+    width: 100%;
+}
+
+@media (max-width: 995px) {
+    .HomePageContainer4 {
+        padding: 100px 40px 0px 40px;
+        display: flex;
+        flex-direction: column;
+        background-color: #f6f7f8;
+    }
+
+    .container4_SecondDiv img {
+        /* border: 2px solid rgb(0, 0, 0); */
+        width: 400px;
+        /* background-color: red; */
+    }
+}
+
 .HomePageContainer4> :nth-child(1)>h2 {
     margin: 0px 0px 32px;
     font-size: 48px;
