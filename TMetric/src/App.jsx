@@ -12,9 +12,8 @@ import Homepage from './pages/Homepage/Homepage';
 function App() {
   return (
    <div>
-    <AllRoutes/>
-    <Homepage/>
-
+   <AllRoutes/>
+    {/* <Homepage/> */}
    </div>
   )
 }
