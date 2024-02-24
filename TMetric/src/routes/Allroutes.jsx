@@ -12,6 +12,7 @@ import Price from "../pages/Price";
 import { Navbar } from "../Components/Navbar";
 import { DropdownWhyTMatric } from "../Components/DropdownWhyTMatric";
 import { DropdownApp } from "../Components/DropdownAppIntegeration";
+import Homepage from "../pages/Homepage/Homepage";
 
 const AllRoutes = () => {
   
@@ -19,7 +20,7 @@ const AllRoutes = () => {
   <BrowserRouter>
   <Navbar/>
     <Routes>
-      <Route path="/" element={<HomePage />} />
+      <Route path="/" element={<Homepage />} />
      
       <Route path="/why-tmetric" element={<DropdownWhyTMatric />} />
       <Route path="/apps-integrations" element={<DropdownApp />} />
