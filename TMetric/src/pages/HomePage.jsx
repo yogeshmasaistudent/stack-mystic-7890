@@ -1,6 +1,6 @@
 import "../styles/HomePage.css";
 import { MdEmail } from "react-icons/md";
-import Homepage from "./HomePage/Homepage";
+// import Homepage from "./HomePage/Homepage";
 
 export const HomePage = () => {
    

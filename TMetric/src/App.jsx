@@ -15,13 +15,13 @@ import { Mywork } from './pages/Mywork';
 function App() {
   return (
    <div>
-   {/* <AllRoutes/> */}
-   <Mywork/>
-   <SideBar/>
-   <DetailedReports/>
+   <AllRoutes/>
+   {/* <Mywork/> */}
+   {/* <SideBar/> */}
+   {/* <DetailedReports/> */}
     {/* <Homepage/> */}
     {/* <Dashboard/> */}
-//     <Task/>
+{/* //     <Task/> */}
     {/* <Time/> */}
    </div>
   )

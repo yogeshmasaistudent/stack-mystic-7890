@@ -12,7 +12,7 @@ import { DropdownApp } from "../Components/DropdownAppIntegeration";
 import Homepage from "../pages/Homepage/Homepage";
 import { Mywork } from "../pages/Mywork";
 
-import Homepage from "../pages/HomePage/Homepage";
+// import Homepage from "../pages/HomePage/Homepage";
 
 
 
@@ -35,7 +35,6 @@ const AllRoutes = () => {
 
       <Route path="/mywork" element={<Mywork />}/>
     </Routes>
-
     </BrowserRouter>
   );
 };
