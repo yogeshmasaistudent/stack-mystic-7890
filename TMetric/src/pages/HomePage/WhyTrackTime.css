@@ -1,0 +1,99 @@
+/* ------------------------ HomePageContainer8------------------------ */
+.HomePageContainer8 {
+    padding: 120px 0px;
+}
+
+.HomePageContainer8>div {
+    margin: 0px 11.4vw;
+    padding: 0px 60px;
+}
+
+.HomePageContainer8>div>h3 {
+    font-size: 36px;
+    margin: 0px 0px 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.HomePageContainer8>div> :nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.HomePageContainer8>div> :nth-child(2)> :nth-child(2) {
+    margin: 2px 0px 0px 125px;
+    padding: 0px 60px 0px 0px;
+}
+
+.HomePageContainer8>div> :nth-child(2)> :nth-child(2)>img {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.HomePageContainer8ParaDiv>p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px 0px 32px;
+}
+
+.HomePageContainer8ParaDiv> :nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.HomePageContainer8ParaDiv> :nth-child(2)> :nth-child(1) {
+    padding: 10px 0px 0px 0px;
+}
+
+.HomePageContainer8ParaDiv> :nth-child(2)> :nth-child(2) {
+    font-size: 16px;
+    display: flex;
+    color: #3070f0;
+    font-weight: 500;
+    margin: 16px 0px 0px 20px;
+}
+
+.HomePageContainer8ParaDiv> :nth-child(2)> :nth-child(2)> :nth-child(1) {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.HomePageContainer8ParaDiv> :nth-child(2)> :nth-child(2)> :nth-child(2) {
+    font-size: 30px;
+}
+
+.HomePageContainer8ParaDiv> :nth-child(2)> :nth-child(1)>p {
+    margin: 0px 0px 9px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.HomePageContainer8>div> :nth-child(3) {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.HomePageContainer8>div> :nth-child(3)>div {
+    text-align: center;
+    padding: 10px 2px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.HomePageContainer8 .HomePageContainer9SelectedList {
+    border-top: solid 2px #3070f0;
+    color: #3070f0;
+}
+
+.HomePageContainer8 .HomePageContainer9List {
+    border-top: solid 1px #9a9ea3a8;
+    color: #777e85;
+    transition-duration: 0.3s;
+}
+
+.HomePageContainer8 .HomePageContainer9List:hover {
+    transition-duration: 0.3s;
+    color: #3070f0;
+}

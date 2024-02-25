@@ -154,19 +154,12 @@
     padding: 100px 40px 0px 40px;
     display: flex;
     background-color: #f6f7f8;
-    border: 2px solid red;
-}
-
-.container4_firstDiv {
-    border: 2px solid red;
 }
 
 
 
-.container4_SecondDiv {
-    border: 2px solid red;
-    
-}
+
+
 
 .container4_SecondDiv img {
     /* border: 2px solid rgb(0, 0, 0); */
@@ -179,7 +172,7 @@
         display: flex;
         flex-direction: column;
         background-color: #f6f7f8;
-        border: 2px solid red;
+        
     }
 
     .container4_SecondDiv img {
@@ -306,3 +299,6 @@
     left: -50px;
     width: 53.6vw;
 }
+
+
+/* Here i am adding something */
