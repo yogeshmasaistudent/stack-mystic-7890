@@ -9,7 +9,7 @@ export const Mywork = () => {
         {/* 1st child */}
         <Flex gap={'10px'}  >
 
-            <Box width={'40%'} border={'0.5px solid lightgray'} h="150px" borderRadius={'10px'} p={"10px"} boxShadow= "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;" >
+            <Box width={'40%'} border={'0.5px solid lightgray'} h="auto" borderRadius={'10px'} p={"10px"} boxShadow= "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;" >
 
                 <Box 
                     display={"flex"} flexDirection={'row'} justifyContent={'space-between'} alignItems={"center"} 
@@ -30,7 +30,7 @@ export const Mywork = () => {
 
             </Box>
 
-            <Box width={'60%'} border={'0.5px solid lightgray'} h="150px" borderRadius={'10px'} p={"10px"} boxShadow= "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+            <Box width={'60%'} border={'0.5px solid lightgray'} h="auto" borderRadius={'10px'} p={"10px"} boxShadow= "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
                 <Box 
                     display={"flex"} flexDirection={'row'} justifyContent={'space-between'} alignItems={"center"} 
                 >
@@ -49,35 +49,33 @@ export const Mywork = () => {
                     <Text>Your currently running timer is displayed here.</Text>
                     <Flex gap={"10px"} >
 
-                        <Box background={"rgb(250,251,252)"} w={"50%"} h={"fit-content"} borderRadious={"20px"} border={"0.5px solid lightgray"} p={"10px"} boxSizing={"border-box"} >
+                        <Box background={"rgb(250,251,252)"} w={"25%"} h={"auto"} borderRadious={"20px"} border={"0.5px solid lightgray"} p={"10px"} boxSizing={"border-box"} >
                            <Text>Today</Text>
                            <Text>-</Text> 
                         </Box>
 
-                        <Box w={"50%"} h={"fit-content"} borderRadious={"20px"} border={"0.5px solid lightgray"} p={"10px"} boxSizing={"border-box"} >
+                        <Box w={"25%"} h={"auto"} borderRadious={"20px"} border={"0.5px solid lightgray"} p={"10px"} boxSizing={"border-box"} >
                            <Text>This Week</Text>
                            <Text>-</Text> 
                         </Box>
 
-                        <Box w={"50%"} h={"fit-content"} borderRadious={"20px"} border={"0.5px solid lightgray"} p={"10px"} boxSizing={"border-box"} >
+                        <Box w={"25%"} h={"auto"} borderRadious={"20px"} border={"0.5px solid lightgray"} p={"10px"} boxSizing={"border-box"} >
                            <Text>This Month</Text>
                            <Text>-</Text> 
                         </Box>
 
-                        <Box w={"50%"} h={"fit-content"} borderRadious={"20px"} border={"0.5px solid lightgray"} p={"10px"} boxSizing={"border-box"} >
+                        <Box w={"25%"} h={"auto"} borderRadious={"20px"} border={"0.5px solid lightgray"} p={"10px"} boxSizing={"border-box"} >
                             <Text>Monthly Balance</Text>
                             <Text>-</Text>  
                         </Box>
-
                     </Flex>
                 </Box>
             </Box>
-
         </Flex>
 
         <Flex gap={'10px'} mt="20px" >
 
-            <Box width={'50%'} border={'0.5px solid lightgray'} h="300px" borderRadius={'10px'} p="10px" boxShadow= "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+            <Box width={'40%'} border={'0.5px solid lightgray'} h="300px" borderRadius={'10px'} p="10px" boxShadow= "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
                 <Flex borderBottom={'0.5px solid lightgray'}>
                     <Text>Calender</Text>
                     <Spacer/>
@@ -94,7 +92,7 @@ export const Mywork = () => {
                 </Box>
             </Box>
 
-            <Box width={'50%'} border={'0.5px solid lightgray'} h="300px" borderRadius={'10px'} p="10px" boxShadow= "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+            <Box width={'40%'} border={'0.5px solid lightgray'} h="300px" borderRadius={'10px'} p="10px" boxShadow= "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
                 <Flex borderBottom={'0.5px solid lightgray'}>
                     <Text>Due Tasks</Text>
                     <Spacer/>
