@@ -16,8 +16,8 @@ function App() {
    {/* <DetailedReports/> */}
     {/* <Homepage/> */}
     {/* <Dashboard/> */}
-  {/* <Task/>
-    <Time/> */}
+{/* //     <Task/> */}
+    {/* <Time/> */}
    </div>
   )
 }

@@ -18,23 +18,23 @@ function Homepage() {
   return (
     <div>
       <Box>
-        <Navbar/>
-      <HomePage/>
-        <Firstsection/>           
-       <ManageTeamData/>
-       <Secondsection/>
-       <Thirdsection/>
-       <PopularServices/>
-       <WhyTrackTime/>
-       <Reviews/>
-       <TrustedByCompany/>
-       <WhyTmetric/>
-       <MakeTime/>
-       <Footer/>
+        <Navbar />
+        <HomePage />
+        <Firstsection />
+        <ManageTeamData />
+        <Secondsection />
+        <Thirdsection />
+        <PopularServices />
+        <WhyTrackTime />
+        <Reviews />
+        <TrustedByCompany />
+        <WhyTmetric />
+        <MakeTime />
+        <Footer />
       </Box>
 
     </div>
   )
 }
-
 export default Homepage
+
