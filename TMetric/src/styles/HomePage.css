@@ -284,7 +284,6 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
         rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
-
 .HomePageContainer3_ListDiv> :nth-child(1)>img {
     width: 48px;
 }
@@ -338,9 +337,78 @@
   .HomePageContainer1> :nth-child(2)>img {
     width: 100%;
   }
+
+  /* Add more specific styles for smaller screens */
+
+
+/* Base styles */
+.HomePageMainDiv {
+    max-width: 100%;
+    /* Add other base styles here */
+}
+} 
+
+/* Styles for screens smaller than 576px */
+@media (max-width: 575.98px) {
+    .HomePageContainer1 {
+        /* Adjust padding or layout for smaller screens */
+        padding: 10px;
+    }
+
+    .HomePageContainer1_Text {
+        /* Adjust text styles for smaller screens */
+        font-size: 14px;
+    }
+
+    /* Add more styles as needed */
+}
+
+/* Styles for screens between 576px and 767.98px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .HomePageContainer1 {
+        /* Adjust padding or layout for medium screens */
+        padding: 20px;
+    }
+
+    .HomePageContainer1_Text {
+        /* Adjust text styles for medium screens */
+        font-size: 16px;
+    }
+    /* Add more styles as needed */
  
   .HomePageContainer2{
     justify-content: center;
+
 }
 }
+/* Styles for screens between 992px and 1199.98px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .HomePageContainer1 {
+        /* Adjust padding or layout for extra large screens */
+        padding: 40px;
+    }
+
+    .HomePageContainer1_Text {
+        /* Adjust text styles for extra large screens */
+        font-size: 20px;
+    }
+
+    /* Add more styles as needed */
+}
+
+/* Styles for screens larger than 1200px */
+@media (min-width: 1200px) {
+    .HomePageContainer1 {
+        /* Adjust padding or layout for extra large screens */
+        padding: 50px;
+    }
+
+    .HomePageContainer1_Text {
+        /* Adjust text styles for extra large screens */
+        font-size: 22px;
+    }
+
+    /* Add more styles as needed */
+}
+/* css part container8 */
 
