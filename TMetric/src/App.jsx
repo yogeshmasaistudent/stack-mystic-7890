@@ -16,13 +16,13 @@ function App() {
   return (
    <div>
    {/* <AllRoutes/> */}
-   <Mywork/>
+   {/* <Mywork/> */}
    <SideBar/>
-   <DetailedReports/>
+   {/* <DetailedReports/> */}
     {/* <Homepage/> */}
     {/* <Dashboard/> */}
-  <Task/>
-    <Time/>
+  {/* <Task/>
+    <Time/> */}
    </div>
   )
 }
