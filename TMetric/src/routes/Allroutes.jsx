@@ -8,7 +8,12 @@ import Price from "../pages/Price";
 import { Navbar } from "../Components/Navbar";
 import { DropdownWhyTMatric } from "../Components/DropdownWhyTMatric";
 import { DropdownApp } from "../Components/DropdownAppIntegeration";
+
+import Homepage from "../pages/Homepage/Homepage";
+import { Mywork } from "../pages/Mywork";
+
 import Homepage from "../pages/HomePage/Homepage";
+
 
 
 const AllRoutes = () => {
@@ -27,7 +32,10 @@ const AllRoutes = () => {
       {/* Here i am making another componant */}
       <Route path="/signup" element={<SignUp />} />
       <Route path="/login" element={<Login />} />
+
+      <Route path="/mywork" element={<Mywork />}/>
     </Routes>
+
     </BrowserRouter>
   );
 };
