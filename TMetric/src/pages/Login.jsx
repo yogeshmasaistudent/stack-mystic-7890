@@ -37,6 +37,15 @@ const LogIn = () => {
         });
         navigate("/dashboard");
       }
+      else{
+        toast({
+          title: 'Login',
+          description: "Invalid email/Password",
+          status: 'success',
+          duration: 5000,
+          isClosable: true,
+        });
+      }
     })
     .catch((error) => {
       console.error(error);

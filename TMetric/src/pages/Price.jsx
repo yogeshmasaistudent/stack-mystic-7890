@@ -6,6 +6,7 @@ import { Footer } from "../Components/Footer";
 import { v4 as uuid } from "uuid";
 import { Link } from "react-router-dom";
 import { Box, Stack, Switch } from "@chakra-ui/react";
+import { Navbar } from "../Components/Navbar";
 const data = [
   {
     title: "Time tracking",
@@ -67,6 +68,7 @@ const Price = () => {
 
   return (
     <>
+    <Navbar/>
       <div>
         <div className="price-header">
           <h1> Pricing</h1>
