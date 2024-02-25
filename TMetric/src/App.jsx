@@ -15,9 +15,9 @@ import { Mywork } from './pages/Mywork';
 function App() {
   return (
    <div>
-   {/* <AllRoutes/> */}
+   <AllRoutes/>
    {/* <Mywork/> */}
-   <SideBar/>
+   {/* <SideBar/> */}
    {/* <DetailedReports/> */}
     {/* <Homepage/> */}
     {/* <Dashboard/> */}
