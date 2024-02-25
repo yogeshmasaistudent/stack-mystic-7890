@@ -118,7 +118,7 @@ const Time = () => {
   </Box>
   
   
-  <Box display={"flex"} gap="15px" >
+  <Box display={"flex"} flexWrap={"wrap"} gap="15px" >
       <Input type="date" ></Input>
       <Text fontSize={"2xl"}>Today</Text>
       <Flex mt="14px" gap="10px">
