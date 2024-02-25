@@ -1,7 +1,9 @@
 import style from "../styles/Signup.module.css";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import axios from "axios";
+import { useToast } from "@chakra-ui/react";
 
 
 
@@ -119,11 +121,29 @@ const SignUp = () => {
     });
     setShowErr(false);
   };
-
-  const handleSubmit = (e) => {
+  const navigate = useNavigate();
+  const toast = useToast();
+  const handleSubmit = async(e) => {
     e.preventDefault();
+      try {
+        const response = await axios.post('https://youdoos.onrender.com/users/register', user);
+        console.log('User added successfully:', response.data);
+        // Reset the form after successful submission if needed
+        setuser({});
+        toast({
+          title: 'Acoount',
+          description: "Account Created Succesfully",
+          status: 'success',
+          duration: 5000,
+          isClosable: true,
+        });
+        navigate("/login")
+      } catch (error) {
+        console.error('Error adding user:', error);
+        // Handle any error state or display error message to the user
+}
+ };
    
-  };
 
   return (
     <div className={style.signup}>

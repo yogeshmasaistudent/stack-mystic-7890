@@ -1,9 +1,12 @@
 
 import '../styles/WhyTMatric.css'
+import { Navbar } from './Navbar'
 // import { BsArrowRightShort } from 'react-icons/bs'
 export const DropdownWhyTMatric = () => {
     return (
-<div className='whyTMatric'>
+        <div>
+            <Navbar/>
+            <div className='whyTMatric'>
         
         <div className='WhyTMatricMainDiv'>
             <div>
@@ -79,6 +82,7 @@ export const DropdownWhyTMatric = () => {
                 </div>
                 <div className='WhyTMatricAllFeatures'><span>View all features </span></div>
             </div>
+        </div>
         </div>
         </div>
     )

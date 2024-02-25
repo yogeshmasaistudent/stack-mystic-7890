@@ -12,7 +12,10 @@ import {
     
   } from "@chakra-ui/react";
   import { MdChevronLeft, MdChevronRight, MdMenu } from "react-icons/md";
-
+import { Mywork } from "../pages/Mywork";
+import Time from "../pages/Time/Time";
+import Task from "../pages/Task/Task";
+import { DetailedReports } from "../pages/DetailedReports";
 //   import { CSSTransition } from "react-transition-group";
 // import SideAcc from "./SideAcc";
 
@@ -22,6 +25,7 @@ const SideBar = ({showAdd}) => {
   const [time, setTime] = useState(true);
   const [task, setTask] = useState(false);
   const[work,setWork]=useState(false)
+  const[report,setreport]=useState(false)
   useEffect(() => {
     if (barToggle) {
       addBodyPadding();
@@ -43,14 +47,22 @@ const SideBar = ({showAdd}) => {
       setTask(true);
       setTime(false);
       setWork(false)
+      setreport(false)
     } else if (n === "time") {
       setTask(false);
       setTime(true);
       setWork(false)
+      setreport(false)
     }else if(n=="my work"){
         setTask(false);
         setTime(false);
         setWork(true)
+        setreport(false)
+    }else if(n=="reports"){
+        setTask(false);
+        setTime(false);
+        setWork(false)
+        setreport(true)
     }
   };
   return (
@@ -150,14 +162,22 @@ const SideBar = ({showAdd}) => {
             <span>Tasks</span>
           </div>
           
-          
+          <div
+            className={report ? styles.selecteddiv : styles.normaldiv}
+            onClick={() => sBar("reports")}
+          >
+            <BiTask style={{ fontSize: "25px" }} />
+            <span>Reports</span>
+          </div>
           <hr></hr>
           <DropdownMenu menus={menus} />
           {/* <SideAcc showAdd={showAdd} /> */}
         </div>
       </div>
-      
-
+      {time && <Time />}
+      {work && <Mywork />}
+       {task && <Task />}
+       {report && <DetailedReports />}
     </>
   );
 };
@@ -206,6 +226,7 @@ function DropdownMenu({ menus }) {
           </Menu>
          
         ))}
+        {activeMenu && <DetailedReports />}
       </>
     );
   }
