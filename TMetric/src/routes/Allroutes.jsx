@@ -9,8 +9,9 @@ import { Navbar } from "../Components/Navbar";
 import { DropdownWhyTMatric } from "../Components/DropdownWhyTMatric";
 import { DropdownApp } from "../Components/DropdownAppIntegeration";
 
-import Homepage from "../pages/Homepage/Homepage";
 import { Mywork } from "../pages/Mywork";
+import Homepage from "../pages/HomePage/Homepage";
+import SideBar from "../Components/SideBar";
 
 // import Homepage from "../pages/HomePage/Homepage";
 
@@ -20,7 +21,6 @@ const AllRoutes = () => {
   
   return (
   <BrowserRouter>
-  <Navbar/>
     <Routes>
       <Route path="/" element={<Homepage/>} />     
       <Route path="/why-tmetric" element={<DropdownWhyTMatric />} />
@@ -34,6 +34,7 @@ const AllRoutes = () => {
       <Route path="/login" element={<Login />} />
 
       <Route path="/mywork" element={<Mywork />}/>
+      <Route path="/dashboard" element={<SideBar/>}/>
     </Routes>
 
     </BrowserRouter>

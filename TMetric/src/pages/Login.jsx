@@ -1,5 +1,8 @@
 import { useState } from "react";
 import style from "../styles/login.module.css";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import { useToast } from "@chakra-ui/react";
 
 
 
@@ -16,9 +19,29 @@ const LogIn = () => {
     });
     setShowErr(false)
   };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  
+  const navigate = useNavigate();
+  const toast = useToast();
+  const handleSubmit = async(e) => {
+    e.preventDefault();    
+    const response = await axios.post('https://youdoos.onrender.com/users/login', user)
+    .then((response) => {
+      console.log(response.data.accessToken);
+      if(response.data.accessToken){
+        console.log("succes");
+        toast({
+          title: 'Login',
+          description: "Login Succesfull",
+          status: 'success',
+          duration: 5000,
+          isClosable: true,
+        });
+        navigate("/dashboard");
+      }
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+
   };
 
   return (
