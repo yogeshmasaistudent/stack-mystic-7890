@@ -1,8 +1,11 @@
 
 import '../styles/WhyTMatric.css'
+import { Navbar } from './Navbar'
 export const DropdownApp = () => {
     return (
-        <div className='WhyTMatricMainDiv'>
+        <div>
+            <Navbar/>
+            <div className='WhyTMatricMainDiv'>
             <div>
                 <div>
                     <div className='WhyTMatricHeading'>Apps</div>
@@ -83,6 +86,7 @@ export const DropdownApp = () => {
                 </div>
                 <div className='WhyTMatricAllFeatures'><span>View all features </span></div>
             </div>
+        </div>
         </div>
     )
 }

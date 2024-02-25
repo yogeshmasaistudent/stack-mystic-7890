@@ -131,7 +131,7 @@ const SignUp = () => {
         // Reset the form after successful submission if needed
         setuser({});
         toast({
-          title: 'register',
+          title: 'Acoount',
           description: "Account Created Succesfully",
           status: 'success',
           duration: 5000,
