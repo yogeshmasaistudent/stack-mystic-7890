@@ -5,7 +5,6 @@ import { ImCross } from "react-icons/im";
 import { Footer } from "../Components/Footer";
 import { v4 as uuid } from "uuid";
 import { Link } from "react-router-dom";
-import {Box, Stack, Switch} from "@chakra-ui/react";
 const data = [
   {
     title: "Time tracking",

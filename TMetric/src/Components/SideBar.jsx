@@ -1,6 +1,19 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "../styles/SideBar.module.css";
 import { BiTask } from "react-icons/bi";
+import {
+    Menu,
+    MenuButton,
+    MenuList,
+    MenuItem,
+    Button,
+    Text,
+    Box,
+    
+  } from "@chakra-ui/react";
+  import { MdChevronLeft, MdChevronRight, MdMenu } from "react-icons/md";
+
+//   import { CSSTransition } from "react-transition-group";
 // import SideAcc from "./SideAcc";
 
 const SideBar = ({showAdd}) => {
@@ -8,6 +21,7 @@ const SideBar = ({showAdd}) => {
   const [barToggle, setBarToggle] = useState(true);
   const [time, setTime] = useState(true);
   const [task, setTask] = useState(false);
+  const[work,setWork]=useState(false)
   useEffect(() => {
     if (barToggle) {
       addBodyPadding();
@@ -28,9 +42,15 @@ const SideBar = ({showAdd}) => {
     if (n === "task") {
       setTask(true);
       setTime(false);
+      setWork(false)
     } else if (n === "time") {
       setTask(false);
       setTime(true);
+      setWork(false)
+    }else if(n=="my work"){
+        setTask(false);
+        setTime(false);
+        setWork(true)
     }
   };
   return (
@@ -89,6 +109,7 @@ const SideBar = ({showAdd}) => {
             src="https://app.tmetric.com/images/tmetric_logo_and_text.svg"
             alt=""
           ></img>
+          
 
           <div
             className={time ? styles.selecteddiv : styles.normaldiv}
@@ -105,6 +126,22 @@ const SideBar = ({showAdd}) => {
             />
             <span>Time</span>
           </div>
+          
+          <div
+            className={work ? styles.selecteddiv : styles.normaldiv}
+            onClick={() => sBar("my work")}
+          >
+            {/* <img
+              style={{ height: "25px" }}
+              alt=""
+              src={
+                time
+                  ? "https://tmetric.com/media/2p4n4oyc/icon-timer-blue.svg"
+                  : "https://tmetric.com/media/qojb5snq/icon-timer-gray.svg"
+              }
+            /> */}
+            <span>My work</span>
+          </div>
           <div
             className={task ? styles.selecteddiv : styles.normaldiv}
             onClick={() => sBar("task")}
@@ -112,12 +149,109 @@ const SideBar = ({showAdd}) => {
             <BiTask style={{ fontSize: "25px" }} />
             <span>Tasks</span>
           </div>
+          
+          
           <hr></hr>
+          <DropdownMenu menus={menus} />
           {/* <SideAcc showAdd={showAdd} /> */}
         </div>
       </div>
+      
+
     </>
   );
 };
+
+
+function DropdownMenu({ menus }) {
+    const [activeMenu, setActiveMenu] = useState(null);
+    const [menuHeight, setMenuHeight] = useState(null);
+  
+    function calcHeight(el) {
+      const height = el.offsetHeight;
+      setMenuHeight(height + 20);
+    }
+  
+    return (
+      <>
+        {menus.map((menu, index) => (
+            
+          <Menu key={index} className="dropdown" closeOnSelect={false} style={{ marginBottom: "10px" }}>
+            <MenuButton as={Button} rightIcon={<MdChevronRight />}>
+              {menu.label}
+            </MenuButton>
+            <MenuList style={{ height: menuHeight }} className="dropdown">
+              <div className="main-menu">
+                {menu.items.map((item, idx) => (
+                  <MenuItem key={idx} onClick={() => setActiveMenu(item.label)}>
+                    {item.label}
+                    <Box pos="absolute" ml="80%">
+                      {/* <MdChevronRight /> */}
+                    </Box>
+                  </MenuItem>
+                ))}
+              </div>
+              
+            </MenuList>
+            {activeMenu === menu.label && (
+              <Menu className="dropdown" closeOnSelect={false} style={{ marginBottom: "10px" }}>
+                <MenuButton as={Button} rightIcon={<MdChevronRight />}>
+                  {menu.label}
+                </MenuButton>
+              
+              </Menu>
+            )}
+             <div style={{marginBottom: "13px"}}></div>
+         
+          </Menu>
+         
+        ))}
+      </>
+    );
+  }
+  
+  const menus = [
+    {
+      label: "ANALYZE",
+      items: [
+        { label: "Reports" },
+        { label: "Activity" }
+      ],
+      submenu: [
+        { label: "Subitem 1" },
+        { label: "Subitem 2" }
+      ]
+    },
+    {
+      label: "MANAGE",
+      items: [
+        { label: "Projects" },
+        { label: "Clients" },
+        { label: "Invoices" },
+        { label: "Time Off" }
+      ],
+      submenu: [
+        { label: "Subitem 1" },
+        { label: "Subitem 2" }
+      ]
+    },
+    {
+        label: "WORKSPACE",
+        items: [
+          { label: "Settings" },
+          { label: "Members" },
+          { label: "Teams" },
+          { label: "Tags" },
+          { label: "Integrations" },
+          { label: "Subscription" }
+        ],
+        submenu: [
+          { label: "Subitem 1" },
+          { label: "Subitem 2" }
+        ]
+      }
+  ];
+  
+
 
 export default SideBar;
