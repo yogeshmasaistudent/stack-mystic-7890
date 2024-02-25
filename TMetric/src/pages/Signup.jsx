@@ -1,8 +1,9 @@
 import style from "../styles/Signup.module.css";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
+import { useToast } from "@chakra-ui/react";
 
 
 
@@ -120,7 +121,8 @@ const SignUp = () => {
     });
     setShowErr(false);
   };
-  
+  const navigate = useNavigate();
+  const toast = useToast();
   const handleSubmit = async(e) => {
     e.preventDefault();
       try {
@@ -128,6 +130,14 @@ const SignUp = () => {
         console.log('User added successfully:', response.data);
         // Reset the form after successful submission if needed
         setuser({});
+        toast({
+          title: 'register',
+          description: "Account Created Succesfully",
+          status: 'success',
+          duration: 5000,
+          isClosable: true,
+        });
+        navigate("/login")
       } catch (error) {
         console.error('Error adding user:', error);
         // Handle any error state or display error message to the user
