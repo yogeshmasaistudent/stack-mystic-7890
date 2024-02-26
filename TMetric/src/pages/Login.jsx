@@ -2,7 +2,7 @@ import { useState } from "react";
 import style from "../styles/login.module.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { useToast } from "@chakra-ui/react";
+import { Spinner, useToast } from "@chakra-ui/react";
 
 
 
@@ -22,10 +22,19 @@ const LogIn = () => {
   const navigate = useNavigate();
   const toast = useToast();
   const handleSubmit = async(e) => {
-    e.preventDefault();    
+    e.preventDefault(); 
+    toast({
+      title: "Logging in",
+      description: "Please wait...",
+      status: "info",
+      duration: null, // Set duration to null to make it persistent until dismissed manually
+      isClosable: false,
+      render: () => <Spinner />,
+    });   
     const response = await axios.post('https://youdoos.onrender.com/users/login', user)
     .then((response) => {
       console.log(response.data.accessToken);
+      toast.closeAll();
       if(response.data.accessToken){
         console.log("succes");
         toast({

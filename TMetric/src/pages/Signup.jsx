@@ -125,11 +125,20 @@ const SignUp = () => {
   const toast = useToast();
   const handleSubmit = async(e) => {
     e.preventDefault();
+    toast({
+      title: "Logging in",
+      description: "Please wait...",
+      status: "info",
+      duration: null, // Set duration to null to make it persistent until dismissed manually
+      isClosable: false,
+      render: () => <Spinner />,
+    }); 
       try {
         const response = await axios.post('https://youdoos.onrender.com/users/register', user);
         console.log('User added successfully:', response.data);
         // Reset the form after successful submission if needed
         setuser({});
+        toast.closeAll();
         toast({
           title: 'Acoount',
           description: "Account Created Succesfully",
